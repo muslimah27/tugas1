@@ -83,4 +83,64 @@ void main() {
   print(m < n);
   print(m <= n);
   print(m >= n);
+
+  // conditional
+  print('Conditional');
+  var nilai;
+  nilai = 90;
+  
+  if(nilai >= 90){
+    print('A');
+  }else if(nilai <= 90 && nilai >= 60){
+    print('B');
+  }else{
+    print('Tidak Lulus');
+  }
+  
+  print('-----------------------');
+  nilai >= 90 ? print('A') : print('Tidak A');
+  
+  // Function
+  print('Function');
+  
+  hitungNilai();
+  hitungNilai1(80, 95);
+  var q = hitungNilai1(80, 4);
+  print(q);
+  var s = hitungNilai2(matkul1 : 80, matkul2 : 5);
+  print(s);
+  hitungNilai3(90, 95);
 }
+
+//Function
+hitungNilai(){
+  print('Hitung Nilai');
+}
+
+//Positional Argument
+hitungNilai1(matkul1, matkul2, [matkul3]) {
+  var nilaiAkhir;
+  if(matkul3 != null){
+    nilaiAkhir = matkul1 + matkul2 + matkul3;
+  }else{
+    nilaiAkhir = matkul1 / matkul2;
+  }
+  return nilaiAkhir;
+}
+
+//Name Argument
+hitungNilai2({matkul1, matkul2}) {
+  var nilaiAkhir;
+  if(matkul2 != null){
+    nilaiAkhir = matkul1 / matkul2;
+  }else{
+    nilaiAkhir = matkul1;
+  }
+  return nilaiAkhir;
+}
+
+//Void
+void hitungNilai3(matkul1, matkul2){
+  var nilaiAkhir = matkul1 + matkul2;
+  print(nilaiAkhir);
+  }
