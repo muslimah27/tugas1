@@ -30,13 +30,13 @@ void main() {
   int semester;
   semester = 4;
 
-  print(semester);
+  print("Semester : " + semester.toString());
 
   // Double
   double ipk;
   ipk = 4.0;
 
-  print(ipk);
+  print("IPK : " + ipk.toString());
 
   // Boolean
   bool benar = true;
@@ -65,4 +65,22 @@ void main() {
   print(kelas["Nama"]);
   print(kelas["Kelas"]);
   print(kelas["Peminatan"]);
+  
+
+
+  // Operator
+  int m, n;
+  m = 27;
+  n = 3;
+  print("M = " + m.toString());
+  print("N = " + n.toString());
+
+  print(m + n);
+  print(m - n);
+  print(m / n);
+  print(m * n);
+  print(m > n);
+  print(m < n);
+  print(m <= n);
+  print(m >= n);
 }
